@@ -1,7 +1,7 @@
 provider "aws" {
   shared_config_files      = ["/Users/memorres/.aws/conf"]
   shared_credentials_files = ["/Users/memorres/.aws/credentials"]
-  profile                  = "kissps-checkout"
+  profile                  = ""
   region                   = var.region
 }
 
