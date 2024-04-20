@@ -1,6 +1,6 @@
-region       = "ap-southeast-2"
-project_name = "kissps-ck"
-environment  = "stg"
+region       = ""
+project_name = ""
+environment  = ""
 
 #ALB----------
 
@@ -13,7 +13,7 @@ lb_listener_protocol = "HTTP"
 
 #RDS----------
 
-db_name                 = "kisspscheckout"
+db_name                 = ""
 allocated_storage       = "10"
 engine                  = "postgres"
 engine_version          = "14.7"
@@ -21,7 +21,7 @@ instance_class          = "db.t3.micro"
 parameter_group_name    = "default.postgres14"
 backup_retention_period = "14"
 db_storage_type         = "gp2"
-db_identifier           = "kissps-checkout-stg" #only lowercase alphanumeric characters and hyphens allowed in "identifier"
+db_identifier           = "" #only lowercase alphanumeric characters and hyphens allowed in "identifier"
 multi_az                = "false"
 
 #S3----------
@@ -52,14 +52,14 @@ acc_id              = ""
 
 #VPC----------
 
-subnet_1 = "subnet-34dcdc5d"
-subnet_2 = "subnet-37dcdc5e"
-subnet_3 = "subnet-7ae6b03c"
-vpc      = "vpc-35dcdc5c"
+subnet_1 = ""
+subnet_2 = ""
+subnet_3 = ""
+vpc      = ""
 
 
 #EC2----------
 
-key_name      = "kissps_cicd"
-ami_id        = "ami-0310483fb2b488153"
+key_name      = ""
+ami_id        = ""
 instance_type = "t3.medium"
